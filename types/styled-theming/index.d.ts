@@ -15,7 +15,7 @@ declare namespace theme {
         | string
         | FlattenInterpolation<ThemeProps<any>>
         | FlattenInterpolation<ThemedStyledProps<any, any>>;
-    type ThemeValueFn = (props: object) => ThemeValueResult;
+    type ThemeValueFn = (props: ThemeProps<any>) => ThemeValueResult;
     type ThemeValue = ThemeValueFn | ThemeValueResult;
 
     interface ThemeMap {
